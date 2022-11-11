@@ -3,12 +3,12 @@ The following is a script I wrote for my univeristy's (SJU) course registration
 portal using Python and the Selenium web framework.
 
 ## About
-Registering for your next semester's courses is important, and part of that is choosing classes that best fit your schedule and needs. However, student seats are limited and one might find themselves in a situation in which a specific class for a course has already been filled; and in many cases, this is because the student did not register promptly enough. <br>
+Registering for your next semester's courses is important, and part of that is choosing classes that best fit your schedule and academic needs. However, student seats are limited and one might find themselves in a situation in which a specific class for a course has already been filled; and in many cases, this is because the student did not register promptly enough (even if it is just by a matter of minutes). <br>
 <br>
 That's where this Python script comes in! With it, you will be prompted to enter necessary values:
  - Login
  - Semester
- - Priortity Registration
+ - Priority Registration
 
 Along with the unique CRNs, and then from there, the Python script will use the Selenium framework to quickly register for those courses you specified. To do this manually could take about a few minutes, where this script will turn that into a few seconds
 
