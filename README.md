@@ -33,6 +33,9 @@ https://chromedriver.chromium.org/downloads <br />
 I have provided a Windows compatible driver for Chrome version 107, and in the future I will try to keep this up-to-date (however, there is no guarantee)
 
 5). In a terminal and while in the directory of this folder, type: <br>
+`pip install -r requirements.txt`
+
+6). Run the code by typing: <br />
 `python registration.py`
 
-6). Follow the on-screen instructions **carefully** and you should be good to go!
+7). Follow the on-screen instructions **carefully** and you should be good to go!
