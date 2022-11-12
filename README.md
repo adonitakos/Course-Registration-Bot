@@ -21,12 +21,14 @@ https://www.python.org/downloads/
 
 2). For this program, you will need to use the Google Chrome browser. If you do not already have that installed, navigate to their official page to download the latest version (for Windows, macOS, or Linux): <br />
 https://www.google.com/chrome/dr/download/
+You always want to make sure your Chrome browswer is on the latest up-to-date version.
 
 3). In order to use this program on your computer, open up a terminal and type: <br>
 `git clone https://github.com/adonitakos/Course-Registration-Bot.git`
 
 4). Download the latest driver from ChromeDriver site (for your given operating system) and extract the .exe file into this directory: <br />
 https://chromedriver.chromium.org/downloads
+I have provided a Windows compatible driver for Chrome version 107, and in the future I will try to keep this up-to-date (however, there is no guarantee)
 
 5). In a terminal and while in the directory of this folder, type: <br>
 `python registration.py`
