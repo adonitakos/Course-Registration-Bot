@@ -10,7 +10,8 @@ That's where this Python script comes in! With it, you will be prompted to enter
  - Semester
  - Priority Registration
 
-Along with the unique CRNs, and then from there, the Python script will use the Selenium framework to quickly register for those courses you specified. To do this manually could take about a few minutes, where this script will turn that into a few seconds
+Along with the unique CRNs, and then from there, the Python script will use the Selenium framework to quickly register for those courses you specified. To do this manually could take about a few minutes, where this script will turn that into a few seconds. <br><br>
+You will be given the option to either run the script immediately or have it run at at a time of your choosing (likely when your Priority Registration opens).
 
 ## Instructions
 0). Before using this, PLAN! Go through the course catalog, see what courses you're planning to take, and write down the CRN numbers.
