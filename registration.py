@@ -28,7 +28,7 @@ def NowOrLater():
         day = input("day: ")
         hour = input("hour (e.g.: 16 for 4:00 PM): ")
         minute = input("minute: ")
-        print("\nPending script execution...\nPress CTRL + C to cancel. \nOtherwise, wait...")
+        print("\nPending script execution...\nPress CTRL + C to cancel. \nOtherwise, do NOT close the console window (leave it running)...")
         pause.until(datetime(int(year), int(month), int(day), int(hour), int(minute), 00))
         Register()
 
@@ -74,7 +74,7 @@ def Register():
     for i in range (len(courses)):
             print(f"{crn_ids[i]}: {courses[i]}")
             driver.find_element(By.ID, crn_ids[i]).send_keys(courses[i])
-    print("\n(I don't know what's up about these outputs below :/ )\nPRESS CTRL + C to exit the program\n\n")
+    print("\n(I don't know what's up with these outputs below :/ )\nPRESS CTRL + C if you wish to exit the program\n\n")
     courses_Submit = driver.find_element(By.XPATH, "//input[@value='Submit Changes']")
     courses_Submit.click()
     quit() # <--- will close the window when the script is finished executing (which I don't like, but it's there)
