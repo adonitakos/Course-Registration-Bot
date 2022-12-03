@@ -3,15 +3,18 @@ The following is a script I wrote for my univeristy's (SJU) course registration
 portal using Python and the Selenium web framework.
 
 ## About
-Registering for your next semester's courses is important, and part of that is choosing classes that best fit your schedule and academic needs. However, student seats are limited and one might find themselves in a situation in which a specific class for a course has already been filled; and in many cases, this is because the student did not register promptly enough (even if it is just by a matter of minutes). <br>
-<br>
-That's where this Python script comes in! With it, you will be prompted to enter necessary values:
+Registering for your next semester's courses is important, and part of that is choosing classes that best fit your schedule and academic needs. However, student seats are limited and one might find themselves in a situation in which a specific class for a course has already been filled. In many cases, this is because the student did not register promptly enough (even if it is just by a matter of minutes). However, there is also the issue that many students are unable to register simply because they are preoccupied with other important matters (lectures, tests, driving, etc.). <br>
+
+With these problems in mind, and my desire to learn automation using Python, I decided to take on this little project.
+
+## Program
+You will be prompted to enter necessary values:
  - Login
  - Semester
  - Priority Registration
 
-Along with the unique CRNs, and then from there, the Python script will use the Selenium framework to quickly register for those courses you specified. To do this manually could take about a few minutes, where this script will turn that into a few seconds. <br><br>
-You will be given the option to either run the script immediately or have it run at at a time of your choosing (likely when your Priority Registration opens).
+along with the unique CRNs. From there, the Python script will use the functions from the Selenium framework to quickly register for those courses you specified. To do this manually could take about a few minutes, where this script will turn that into a few seconds. <br><br>
+You will be given the option to either run the script immediately or have it run at at a time & date of your choosing (likely when your Priority Registration opens). Note that in order to choose a specific time and date, the program will have to be running, so I would not recommend running it more than 24 hours prior.
 
 ## Instructions
 0). Before using this, PLAN! Go through the course catalog, see what courses you're planning to take, and write down the CRN numbers.
