@@ -1,9 +1,9 @@
 # Course Registration Bot
 The following is a script I wrote for my univeristy's (SJU) course registration
-portal using Python and the Selenium web framework.
+portal using Python and the Selenium web-automation framework.
 
 ## About
-Registering for your next semester's courses is important, and part of that is choosing classes that best fit your schedule and academic needs. However, student seats are limited and one might find themselves in a situation in which a specific class for a course has already been filled. In many cases, this is because the student did not register promptly enough (even if it is just by a matter of minutes). However, there is also the issue that many students are unable to register simply because they are preoccupied with other important matters (lectures, tests, driving, etc.). <br>
+Registering for your next semester's courses is important, and part of that is choosing classes that best fit your schedule and academic needs. However, student seats are limited and one might find themselves in a situation in which a specific class for a course has already been filled. In many cases, this is because the student did not register promptly enough (even if it is just by a matter of minutes). However, there is also the issue that many students are unable to register simply because they are preoccupied with other important matters (lectures, exams, driving, etc.). <br>
 
 With these problems in mind, and my desire to learn automation using Python, I decided to take on this little project.
 
