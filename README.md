@@ -32,14 +32,10 @@ You always want to make sure your Chrome browswer is on the latest up-to-date ve
 If you do not have git installed, you can either download it from here: https://git-scm.com/downloads <br />
 Or you can just click the green Code button, Download ZIP, and then extract the folder.
 
-4). Download the latest driver from **ChromeDriver** site (for your given operating system) and extract the .exe file into this directory: <br />
-https://chromedriver.chromium.org/downloads <br />
-I have provided a Windows compatible driver for Chrome version 107, and in the future I will try to keep this up-to-date (however, there is no guarantee)
-
-5). In a terminal and while in the directory of this folder, type: <br>
+4). In a terminal and while in the directory of this folder, type: <br>
 `pip install -r requirements.txt`
 
-6). Run the code by typing: <br />
+5). Run the code by typing: <br />
 `python registration.py`
 
-7). Follow the on-screen instructions **carefully** and you should be good to go!
+6). Follow the on-screen instructions **carefully** and you should be good to go!
