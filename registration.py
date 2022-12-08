@@ -3,6 +3,8 @@ import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 from getpass import getpass
 from datetime import datetime
 import pause
@@ -11,6 +13,17 @@ def WelcomeBanner():
     print("==========================================================================================")
     print("|                        Adoni's Course Registration Bot                                 |")
     print("==========================================================================================")
+
+def getDriver():
+    print("\nInitializing/Checking webdriver....\n")
+    # Initializes necessary Chrome driver for Selenium to use:
+    global driver
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    chrome_options = Options()
+    chrome_options.add_experimental_option("detach", True)
+    driver.maximize_window
+    driver.close()
+
 
 def NowOrLater():
     print("Would you like to run this script now or at a specified time?")
@@ -31,17 +44,15 @@ def NowOrLater():
         print("\nPending script execution...\nPress CTRL + C to cancel. \nOtherwise, do NOT close the console window (leave it running)...")
         pause.until(datetime(int(year), int(month), int(day), int(hour), int(minute), 00))
         Register()
+        
 
 def Register():
-    print("\nRegistering for courses...\n")
-    
-    # Initializes necessary Chrome driver for Selenium to use:
-    global driver
-    driver = webdriver.Chrome("chromedriver.exe")
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
     driver.maximize_window
     
+    print("\nRegistering for courses...\n")
     # St. John's UIS login page:
     login_url = "https://banssb.stjohns.edu/ssb/twbkwbis.P_WWWLogin"
     driver.get(login_url)
@@ -74,14 +85,16 @@ def Register():
     for i in range (len(courses)):
             print(f"{crn_ids[i]}: {courses[i]}")
             driver.find_element(By.ID, crn_ids[i]).send_keys(courses[i])
-    print("\n(I don't know what's up with these outputs below :/ )\nPRESS CTRL + C if you wish to exit the program\n\n")
+    #print("\n(I don't know what's up with these outputs below :/ )\nPRESS CTRL + C if you wish to exit the program\n\n")
     courses_Submit = driver.find_element(By.XPATH, "//input[@value='Submit Changes']")
     courses_Submit.click()
-    quit() # <--- will close the window when the script is finished executing (which I don't like, but it's there)
+    #quit() # <--- will close the window when the script is finished executing (which I don't like, but it's there)
     
 def main():
     WelcomeBanner()
+    getDriver()
     global courses, X_number, PIN_number, semester, PRN, num_of_courses
+    print("\nPlease enter the necessary information to register...\n")
     # Defining a courses list that will store user-inputed CRN numbers:
     courses = []
     # Getting user-inputed data that will be inserted into the site pages:
