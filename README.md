@@ -8,6 +8,7 @@ Registering for your next semester's courses is important, and part of that is c
 With these problems in mind, and my desire to learn automation using Python, I decided to take on this little project.
 
 ## Program
+First, it will check to see if the necessary Chrome driver for Selenium is within the directory. If not, it will grab the driver (for your given operating system) from their repositories. <br><br>
 You will be prompted to enter necessary values:
  - Login
  - Semester
